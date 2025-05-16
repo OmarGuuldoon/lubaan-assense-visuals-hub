@@ -12,21 +12,67 @@ const Navbar = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setMobileMenuOpen(false);
+    }
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="flex items-center">
+        <a href="#top" className="flex items-center" onClick={(e) => {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}>
           <span className="text-2xl font-serif text-brand-black">Lubaan Assense</span>
-        </Link>
+        </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/" className="text-brand-black hover:text-brand-gray transition-colors text-sm uppercase tracking-wider">Home</Link>
-          <Link to="/shop" className="text-brand-black hover:text-brand-gray transition-colors text-sm uppercase tracking-wider">Shop</Link>
-          <Link to="/about" className="text-brand-black hover:text-brand-gray transition-colors text-sm uppercase tracking-wider">About</Link>
-          <Link to="/contact" className="text-brand-black hover:text-brand-gray transition-colors text-sm uppercase tracking-wider">Contact</Link>
-          <Link to="/cart" className="text-brand-black hover:text-brand-gray transition-colors text-sm uppercase tracking-wider">Cart</Link>
+          <a 
+            href="#top" 
+            className="text-brand-black hover:text-brand-gray transition-colors text-sm uppercase tracking-wider"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            Home
+          </a>
+          <a 
+            href="#about" 
+            className="text-brand-black hover:text-brand-gray transition-colors text-sm uppercase tracking-wider"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("story-section");
+            }}
+          >
+            About
+          </a>
+          <a 
+            href="#services" 
+            className="text-brand-black hover:text-brand-gray transition-colors text-sm uppercase tracking-wider"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("featured-section");
+            }}
+          >
+            Services
+          </a>
+          <a 
+            href="#contact" 
+            className="text-brand-black hover:text-brand-gray transition-colors text-sm uppercase tracking-wider"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("footer-section");
+            }}
+          >
+            Contact
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -60,11 +106,47 @@ const Navbar = () => {
             </button>
           </div>
           <nav className="flex flex-col space-y-6">
-            <Link to="/" className="text-xl text-brand-black hover:text-brand-gray transition-colors">Home</Link>
-            <Link to="/shop" className="text-xl text-brand-black hover:text-brand-gray transition-colors">Shop</Link>
-            <Link to="/about" className="text-xl text-brand-black hover:text-brand-gray transition-colors">About</Link>
-            <Link to="/contact" className="text-xl text-brand-black hover:text-brand-gray transition-colors">Contact</Link>
-            <Link to="/cart" className="text-xl text-brand-black hover:text-brand-gray transition-colors">Cart</Link>
+            <a 
+              href="#top" 
+              className="text-xl text-brand-black hover:text-brand-gray transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+                setMobileMenuOpen(false);
+              }}
+            >
+              Home
+            </a>
+            <a 
+              href="#about" 
+              className="text-xl text-brand-black hover:text-brand-gray transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("story-section");
+              }}
+            >
+              About
+            </a>
+            <a 
+              href="#services" 
+              className="text-xl text-brand-black hover:text-brand-gray transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("featured-section");
+              }}
+            >
+              Services
+            </a>
+            <a 
+              href="#contact" 
+              className="text-xl text-brand-black hover:text-brand-gray transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("footer-section");
+              }}
+            >
+              Contact
+            </a>
           </nav>
         </div>
       </div>

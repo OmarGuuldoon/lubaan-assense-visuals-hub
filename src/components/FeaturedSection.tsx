@@ -32,7 +32,7 @@ const FeaturedSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-brand-beige">
+    <section id="featured-section" className="py-24 bg-brand-beige">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-serif text-brand-black mb-4">Best Sellers</h2>
@@ -57,9 +57,14 @@ const FeaturedSection = () => {
         <div className="mt-16 text-center">
           <Button 
             className="bg-transparent hover:bg-brand-black text-brand-black hover:text-white border-2 border-brand-black rounded-none px-8 py-6"
-            asChild
           >
-            <Link to="/shop">View All Products</Link>
+            <a href="#contact" onClick={(e) => {
+              e.preventDefault();
+              const element = document.getElementById("footer-section");
+              if (element) element.scrollIntoView({ behavior: "smooth" });
+            }}>
+              Contact Us
+            </a>
           </Button>
         </div>
       </div>

@@ -46,7 +46,9 @@ const Index = () => {
         <TestimonialSection />
         <NewsletterSection />
       </main>
-      <Footer />
+      <div id="footer-section">
+        <Footer />
+      </div>
       <WhatsAppButton phoneNumber="+19876543210" />
     </div>
   );

@@ -1,10 +1,9 @@
 
-import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 
 const StorySection = () => {
   return (
-    <section className="py-24">
+    <section id="story-section" className="py-24">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           <div>
@@ -24,9 +23,13 @@ const StorySection = () => {
             </p>
             <Button 
               className="bg-transparent hover:bg-brand-black text-brand-black hover:text-white border-2 border-brand-black rounded-none"
-              asChild
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById("featured-section");
+                if (element) element.scrollIntoView({ behavior: "smooth" });
+              }}
             >
-              <Link to="/about">Read More</Link>
+              Our Services
             </Button>
           </div>
         </div>
