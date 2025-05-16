@@ -7,27 +7,27 @@ const FeaturedSection = () => {
   const featuredProducts = [
     {
       id: 1,
-      name: "Amber Serenade",
-      description: "Warm & Sensual",
+      name: "Royal Frankincense",
+      description: "Premium Grade",
       price: "$68.00",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-      slug: "amber-serenade"
+      image: "/lovable-uploads/c8a8a7dd-66fc-4de3-81e1-ea01f36c38aa.png",
+      slug: "royal-frankincense"
     },
     {
       id: 2,
-      name: "Velvet Woods",
-      description: "Rich & Mysterious",
+      name: "Golden Tears",
+      description: "Pure & Natural",
       price: "$72.00",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
-      slug: "velvet-woods"
+      image: "/lovable-uploads/3a7aa7a1-7d15-4500-9c82-43188fe391c8.png",
+      slug: "golden-tears"
     },
     {
       id: 3,
-      name: "Ocean Whisper",
-      description: "Fresh & Airy",
+      name: "Amber Essence",
+      description: "Rich & Aromatic",
       price: "$65.00",
-      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
-      slug: "ocean-whisper"
+      image: "/lovable-uploads/6ee18e55-6705-4c82-a7c7-1689d3448ba8.png",
+      slug: "amber-essence"
     }
   ];
 
@@ -37,7 +37,7 @@ const FeaturedSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-serif text-brand-black mb-4">Best Sellers</h2>
           <p className="text-brand-gray max-w-md mx-auto">
-            Our most coveted fragrances, cherished for their distinctive character and lasting impression.
+            Our most coveted frankincense resins, cherished for their distinctive aroma and natural healing properties.
           </p>
         </div>
         
