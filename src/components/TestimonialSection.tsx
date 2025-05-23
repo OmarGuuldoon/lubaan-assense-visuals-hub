@@ -4,19 +4,19 @@ const TestimonialSection = () => {
     {
       id: 1,
       quote: "These fragrances evoke such powerful memories. I've never found scents with such depth and longevity.",
-      author: "Sarah J.",
+      // author: "Sarah J.",
       location: "New York"
     },
     {
       id: 2,
       quote: "The attention to detail in each fragrance tells a story. I appreciate the craftsmanship behind every bottle.",
-      author: "Michael T.",
+      // author: "Michael T.",
       location: "California"
     },
     {
       id: 3,
       quote: "Lubaan Assense has become my signature scent. People always ask what I'm wearing.",
-      author: "Emma R.",
+      // author: "Emma R.",
       location: "London"
     }
   ];
@@ -36,7 +36,7 @@ const TestimonialSection = () => {
                 "{testimonial.quote}"
               </blockquote>
               <footer>
-                <p className="font-medium text-brand-black">{testimonial.author}</p>
+                {/* <p className="font-medium text-brand-black">{testimonial.author}</p> */}
                 <p className="text-brand-gray text-sm">{testimonial.location}</p>
               </footer>
             </div>

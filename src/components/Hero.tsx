@@ -1,4 +1,3 @@
-
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 
@@ -12,8 +11,8 @@ const Hero = ({ className }: HeroProps) => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/lovable-uploads/0d327d3b-7f01-4c5c-993a-ac2ea84a9b2a.png" 
-          alt="Lubaan Essence banner" 
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" 
+          alt="Frankincense and Essential Oils" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/20" />

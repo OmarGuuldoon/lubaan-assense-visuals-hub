@@ -28,9 +28,9 @@ const Navbar = () => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}>
           <img 
-            src="/lovable-uploads/0531b0f8-6f40-4c7f-a2db-bbdb616f0709.png" 
+            src="/logo.png" 
             alt="Lubaan Essence Logo" 
-            className="h-16"
+            className="h-16 mix-blend-multiply"
           />
         </a>
 
@@ -61,7 +61,6 @@ const Navbar = () => {
             className="text-brand-black hover:text-brand-gray transition-colors text-sm uppercase tracking-wider"
             onClick={(e) => {
               e.preventDefault();
-              scrollToSection("featured-section");
             }}
           >
             Services
@@ -100,9 +99,9 @@ const Navbar = () => {
         <div className="p-6">
           <div className="flex justify-between items-center mb-8">
             <img 
-              src="/lovable-uploads/0531b0f8-6f40-4c7f-a2db-bbdb616f0709.png" 
+              src="/logo.png" 
               alt="Lubaan Essence Logo" 
-              className="h-12"
+              className="h-12 mix-blend-multiply"
             />
             <button 
               onClick={toggleMobileMenu} 
@@ -139,7 +138,6 @@ const Navbar = () => {
               className="text-xl text-brand-black hover:text-brand-gray transition-colors"
               onClick={(e) => {
                 e.preventDefault();
-                scrollToSection("featured-section");
               }}
             >
               Services
