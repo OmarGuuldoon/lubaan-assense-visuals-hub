@@ -29,10 +29,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-base font-medium text-brand-black">Contact</h4>
             <address className="not-italic text-brand-gray space-y-2 text-sm">
-              <p>123 Fragrance Avenue</p>
-              <p>New York, NY 10001</p>
-              <p className="pt-2">info@lubaanassense.com</p>
-              <p>+1 (555) 123-4567</p>
+              <p>Email: info@lubaanessence.com</p>
+              <p>Phone: +41763039073</p>
+              <p>Gitschenstrasse 2</p>
+              <p>6460 Altdorf</p>
+              <p>Switzerland</p>
             </address>
           </div>
         </div>
