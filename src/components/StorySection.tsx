@@ -8,9 +8,9 @@ const StorySection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
-              alt="Lubaan Assense story" 
-              className="w-full h-full object-cover"
+              src="/lovable-uploads/47f08887-5714-48c1-b1e1-7663876d8293.png" 
+              alt="Lubaan Essence story" 
+              className="w-full h-full object-cover rounded-lg"
             />
           </div>
           <div>

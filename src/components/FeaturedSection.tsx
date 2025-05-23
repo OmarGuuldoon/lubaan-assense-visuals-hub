@@ -1,7 +1,6 @@
 
 import { Button } from "./ui/button";
 import ProductCard from "./ProductCard";
-import { Link } from "react-router-dom";
 
 const FeaturedSection = () => {
   const featuredProducts = [

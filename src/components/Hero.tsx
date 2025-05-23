@@ -1,7 +1,6 @@
 
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
-import { Link } from "react-router-dom";
 
 interface HeroProps {
   className?: string;
@@ -13,8 +12,8 @@ const Hero = ({ className }: HeroProps) => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
-          alt="Lubaan Assense fragrance" 
+          src="/lovable-uploads/47f08887-5714-48c1-b1e1-7663876d8293.png" 
+          alt="Lubaan Essence banner" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/20" />

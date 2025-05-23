@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
@@ -29,7 +28,7 @@ const Navbar = () => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}>
           <img 
-            src="/lovable-uploads/abd2ca73-327b-4f7a-940b-c08ebe4503a6.png" 
+            src="/lovable-uploads/0531b0f8-6f40-4c7f-a2db-bbdb616f0709.png" 
             alt="Lubaan Essence Logo" 
             className="h-16"
           />
@@ -101,7 +100,7 @@ const Navbar = () => {
         <div className="p-6">
           <div className="flex justify-between items-center mb-8">
             <img 
-              src="/lovable-uploads/abd2ca73-327b-4f7a-940b-c08ebe4503a6.png" 
+              src="/lovable-uploads/0531b0f8-6f40-4c7f-a2db-bbdb616f0709.png" 
               alt="Lubaan Essence Logo" 
               className="h-12"
             />
