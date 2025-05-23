@@ -14,12 +14,19 @@ const StorySection = () => {
             />
           </div>
           <div>
-            <h2 className="text-3xl font-serif text-brand-black mb-6">Our Story</h2>
-            <p className="text-brand-gray mb-6 leading-relaxed">
-              Founded on a passion for scent and its profound ability to evoke emotion, Lubaan Assense creates fragrances that tell stories and capture moments.
+            <h2 className="text-3xl font-serif text-brand-black mb-6">Quality & Origin</h2>
+            <p className="text-brand-gray mb-4 leading-relaxed">
+              Certified organic
+            </p>
+            <p className="text-brand-gray mb-4 leading-relaxed">
+              Fairly traded
             </p>
             <p className="text-brand-gray mb-8 leading-relaxed">
-              Each creation is meticulously crafted using the finest ingredients, honoring traditional perfumery techniques while embracing contemporary sensibilities.
+              Genuine Somali Meydi (Frankincense)
+            </p>
+            <h3 className="text-2xl font-serif text-brand-black mb-4">Examples include:</h3>
+            <p className="text-brand-gray mb-8 leading-relaxed">
+              Use in natural medicine, skincare and cosmetic products, and as incense in traditional practices.
             </p>
             <Button 
               className="bg-transparent hover:bg-brand-black text-brand-black hover:text-white border-2 border-brand-black rounded-none"

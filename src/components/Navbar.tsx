@@ -28,7 +28,11 @@ const Navbar = () => {
           e.preventDefault();
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}>
-          <span className="text-2xl font-serif text-brand-black">Lubaan Assense</span>
+          <img 
+            src="/lovable-uploads/abd2ca73-327b-4f7a-940b-c08ebe4503a6.png" 
+            alt="Lubaan Essence Logo" 
+            className="h-16"
+          />
         </a>
 
         {/* Desktop Navigation */}
@@ -96,7 +100,11 @@ const Navbar = () => {
       >
         <div className="p-6">
           <div className="flex justify-between items-center mb-8">
-            <span className="text-2xl font-serif text-brand-black">Lubaan Assense</span>
+            <img 
+              src="/lovable-uploads/abd2ca73-327b-4f7a-940b-c08ebe4503a6.png" 
+              alt="Lubaan Essence Logo" 
+              className="h-12"
+            />
             <button 
               onClick={toggleMobileMenu} 
               className="text-brand-black"

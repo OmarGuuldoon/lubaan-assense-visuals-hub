@@ -24,18 +24,25 @@ const Hero = ({ className }: HeroProps) => {
       <div className="container mx-auto px-4 relative z-10 animate-fade-in">
         <div className="max-w-xl">
           <h1 className="text-5xl md:text-7xl font-serif text-white font-light mb-6 leading-tight">
-            Discover the essence of luxury
+            Lubaan Essence
           </h1>
-          <p className="text-xl text-white/90 mb-8 font-light">
-            Expertly crafted fragrances for discerning individuals
+          <p className="text-xl text-white/90 mb-4 font-light">
+            Natural – Pure – Effective
+          </p>
+          <p className="text-lg text-white/80 mb-8 font-light">
+            A versatile natural product with a wide range of uses in health, beauty, and tradition.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 
               className="bg-white text-brand-black hover:bg-brand-cream border-none rounded-none px-8 py-6" 
               size="lg"
-              asChild
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById("featured-section");
+                if (element) element.scrollIntoView({ behavior: "smooth" });
+              }}
             >
-              <Link to="/shop">Discover Collection</Link>
+              Discover Products
             </Button>
           </div>
         </div>

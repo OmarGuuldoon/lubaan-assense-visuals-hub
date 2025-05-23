@@ -29,12 +29,21 @@ const Index = () => {
                     />
                   </div>
                   <div className="md:w-1/2 p-8 md:p-12">
-                    <h3 className="font-serif text-2xl mb-4 text-brand-black">Discover Our Ceremonial Grade</h3>
-                    <p className="text-brand-gray mb-6">
-                      Our finest selection of frankincense resin, harvested with care from ancient trees and processed using traditional methods to preserve its pure essence.
+                    <h3 className="font-serif text-2xl mb-4 text-brand-black">Areas of Application</h3>
+                    
+                    <h4 className="font-serif text-xl mb-2 text-brand-black">Health:</h4>
+                    <p className="text-brand-gray mb-4">
+                      Anti-inflammatory properties, supports joint health and mobility.
                     </p>
-                    <p className="text-brand-dark">
-                      Perfect for spiritual ceremonies, aromatherapy, and personal wellness rituals.
+                    
+                    <h4 className="font-serif text-xl mb-2 text-brand-black">Cosmetics:</h4>
+                    <p className="text-brand-gray mb-4">
+                      Nourishing and regenerating effects for healthy, radiant skin.
+                    </p>
+                    
+                    <h4 className="font-serif text-xl mb-2 text-brand-black">Tradition:</h4>
+                    <p className="text-brand-gray mb-4">
+                      Used in aromatherapy and spiritual ceremonies for centuries.
                     </p>
                   </div>
                 </div>

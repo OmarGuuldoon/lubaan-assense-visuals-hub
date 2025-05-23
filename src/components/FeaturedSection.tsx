@@ -7,27 +7,24 @@ const FeaturedSection = () => {
   const featuredProducts = [
     {
       id: 1,
-      name: "Royal Frankincense",
+      name: "Boswellia Carterii",
       description: "Premium Grade",
-      price: "$68.00",
       image: "/lovable-uploads/c8a8a7dd-66fc-4de3-81e1-ea01f36c38aa.png",
-      slug: "royal-frankincense"
+      slug: "boswellia-carterii"
     },
     {
       id: 2,
-      name: "Golden Tears",
+      name: "Boswellia Frereana",
       description: "Pure & Natural",
-      price: "$72.00",
       image: "/lovable-uploads/3a7aa7a1-7d15-4500-9c82-43188fe391c8.png",
-      slug: "golden-tears"
+      slug: "boswellia-frereana"
     },
     {
       id: 3,
-      name: "Amber Essence",
+      name: "Boswellia Sacra",
       description: "Rich & Aromatic",
-      price: "$65.00",
       image: "/lovable-uploads/6ee18e55-6705-4c82-a7c7-1689d3448ba8.png",
-      slug: "amber-essence"
+      slug: "boswellia-sacra"
     }
   ];
 
@@ -35,9 +32,9 @@ const FeaturedSection = () => {
     <section id="featured-section" className="py-24 bg-brand-beige">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-serif text-brand-black mb-4">Best Sellers</h2>
-          <p className="text-brand-gray max-w-md mx-auto">
-            Our most coveted frankincense resins, cherished for their distinctive aroma and natural healing properties.
+          <h2 className="text-3xl font-serif text-brand-black mb-4">Our Products</h2>
+          <p className="text-brand-gray max-w-lg mx-auto">
+            We specialize in Boswellia carterii, Boswellia frereana, and Boswellia sacra. Our frankincense is harvested in its purest raw form to ensure unmatched quality and potency in every batch.
           </p>
         </div>
         
@@ -47,7 +44,6 @@ const FeaturedSection = () => {
               key={product.id}
               name={product.name}
               description={product.description}
-              price={product.price}
               image={product.image}
               slug={product.slug}
             />
@@ -55,6 +51,12 @@ const FeaturedSection = () => {
         </div>
 
         <div className="mt-16 text-center">
+          <div className="max-w-2xl mx-auto">
+            <h3 className="text-2xl font-serif text-brand-black mb-4">Service</h3>
+            <p className="text-brand-gray mb-8">
+              LUBAAN ESSENCE is a leading exporter of premium raw frankincense, delivering the finest resins from the heart of Somalia to essential oil producers, cosmetic companies, perfumers, and beyond.
+            </p>
+          </div>
           <Button 
             className="bg-transparent hover:bg-brand-black text-brand-black hover:text-white border-2 border-brand-black rounded-none px-8 py-6"
           >

@@ -6,7 +6,7 @@ import { AspectRatio } from "./ui/aspect-ratio";
 interface ProductCardProps {
   name: string;
   description: string;
-  price: string;
+  price?: string;
   image: string;
   slug?: string;
   className?: string;
@@ -27,7 +27,7 @@ const ProductCard = ({ name, description, price, image, slug = "#", className }:
       <div className="text-center">
         <h3 className="font-serif text-xl text-brand-black">{name}</h3>
         <p className="text-brand-gray mt-1 mb-2 text-sm">{description}</p>
-        <p className="font-medium text-brand-black">{price}</p>
+        {price && <p className="font-medium text-brand-black">{price}</p>}
       </div>
     </Link>
   );
