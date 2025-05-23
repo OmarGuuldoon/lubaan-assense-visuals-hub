@@ -12,7 +12,7 @@ const Hero = ({ className }: HeroProps) => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/lovable-uploads/47f08887-5714-48c1-b1e1-7663876d8293.png" 
+          src="/lovable-uploads/0d327d3b-7f01-4c5c-993a-ac2ea84a9b2a.png" 
           alt="Lubaan Essence banner" 
           className="w-full h-full object-cover"
         />
