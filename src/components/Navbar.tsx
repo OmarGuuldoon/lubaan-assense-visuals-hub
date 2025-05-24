@@ -1,5 +1,3 @@
-
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
@@ -22,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
         {/* Logo */}
         <a href="#top" className="flex items-center" onClick={(e) => {
@@ -32,12 +30,7 @@ const Navbar = () => {
           <img 
             src="/logo.png" 
             alt="Lubaan Essence Logo" 
-            className="h-16"
-            style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }}
-            onError={(e) => {
-              console.log('Logo failed to load from /logo.png, trying ./logo.png');
-              e.currentTarget.src = './logo.png';
-            }}
+            className="h-16 mix-blend-multiply"
           />
         </a>
 
@@ -45,7 +38,7 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <a 
             href="#top" 
-            className="text-white hover:text-brand-cream transition-colors text-sm uppercase tracking-wider drop-shadow"
+            className="text-white hover:text-brand-accent transition-colors text-sm uppercase tracking-wider drop-shadow-md"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
@@ -55,7 +48,7 @@ const Navbar = () => {
           </a>
           <a 
             href="#about" 
-            className="text-white hover:text-brand-cream transition-colors text-sm uppercase tracking-wider drop-shadow"
+            className="text-white hover:text-brand-accent transition-colors text-sm uppercase tracking-wider drop-shadow-md"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("story-section");
@@ -65,7 +58,7 @@ const Navbar = () => {
           </a>
           <a 
             href="#services" 
-            className="text-white hover:text-brand-cream transition-colors text-sm uppercase tracking-wider drop-shadow"
+            className="text-white hover:text-brand-accent transition-colors text-sm uppercase tracking-wider drop-shadow-md"
             onClick={(e) => {
               e.preventDefault();
             }}
@@ -74,7 +67,7 @@ const Navbar = () => {
           </a>
           <a 
             href="#contact" 
-            className="text-white hover:text-brand-cream transition-colors text-sm uppercase tracking-wider drop-shadow"
+            className="text-white hover:text-brand-accent transition-colors text-sm uppercase tracking-wider drop-shadow-md"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("footer-section");
@@ -89,7 +82,7 @@ const Navbar = () => {
           variant="ghost" 
           size="icon" 
           onClick={toggleMobileMenu}
-          className="md:hidden text-brand-black"
+          className="md:hidden text-white drop-shadow-md"
           aria-label="Menu"
         >
           <Menu className="h-6 w-6" />
@@ -108,15 +101,11 @@ const Navbar = () => {
             <img 
               src="/logo.png" 
               alt="Lubaan Essence Logo" 
-              className="h-12"
-              onError={(e) => {
-                console.log('Mobile logo failed to load from /logo.png, trying ./logo.png');
-                e.currentTarget.src = './logo.png';
-              }}
+              className="h-12 mix-blend-multiply"
             />
             <button 
               onClick={toggleMobileMenu} 
-              className="text-brand-black"
+              className="text-white drop-shadow-md"
               aria-label="Close menu"
             >
               <X className="h-6 w-6" />
@@ -125,7 +114,7 @@ const Navbar = () => {
           <nav className="flex flex-col space-y-6">
             <a 
               href="#top" 
-              className="text-xl text-white hover:text-brand-cream transition-colors drop-shadow"
+              className="text-xl text-white hover:text-brand-accent transition-colors drop-shadow-md"
               onClick={(e) => {
                 e.preventDefault();
                 window.scrollTo({ top: 0, behavior: "smooth" });
@@ -136,7 +125,7 @@ const Navbar = () => {
             </a>
             <a 
               href="#about" 
-              className="text-xl text-white hover:text-brand-cream transition-colors drop-shadow"
+              className="text-xl text-white hover:text-brand-accent transition-colors drop-shadow-md"
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection("story-section");
@@ -146,7 +135,7 @@ const Navbar = () => {
             </a>
             <a 
               href="#services" 
-              className="text-xl text-white hover:text-brand-cream transition-colors drop-shadow"
+              className="text-xl text-white hover:text-brand-accent transition-colors drop-shadow-md"
               onClick={(e) => {
                 e.preventDefault();
               }}
@@ -155,7 +144,7 @@ const Navbar = () => {
             </a>
             <a 
               href="#contact" 
-              className="text-xl text-white hover:text-brand-cream transition-colors drop-shadow"
+              className="text-xl text-white hover:text-brand-accent transition-colors drop-shadow-md"
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection("footer-section");
@@ -171,4 +160,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

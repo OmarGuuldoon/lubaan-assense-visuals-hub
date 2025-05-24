@@ -1,4 +1,3 @@
-
 import { Button } from "./ui/button";
 import ProductCard from "./ProductCard";
 import { motion } from "framer-motion";
@@ -9,18 +8,14 @@ const FeaturedSection = () => {
       id: 1,
       name: "Boswellia Carterii",
       description: "Premium Grade",
-      image: "/lovable-uploads/c8a8a7dd-66fc-4de3-81e1-ea01f36c38aa.png",
+      image: "/accra.jpeg",
       slug: "boswellia-carterii"
     },
     {
       id: 2,
       name: "Boswellia Frereana",
       description: "Pure & Natural",
-<<<<<<< HEAD
       image: "/lovable-uploads/6ee18e55-6705-4c82-a7c7-1689d3448ba8.png",
-=======
-      image: "/accra.jpeg",
->>>>>>> 09a3e78e8d47afe2cf825a2913a1043ecf9d2ea9
       slug: "boswellia-frereana"
     },
     {
@@ -97,4 +92,3 @@ const FeaturedSection = () => {
 };
 
 export default FeaturedSection;
-
