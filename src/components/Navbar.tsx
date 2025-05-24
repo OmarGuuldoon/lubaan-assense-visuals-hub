@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
@@ -20,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 shadow-sm">
       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
         {/* Logo */}
         <a href="#top" className="flex items-center" onClick={(e) => {
@@ -30,7 +31,9 @@ const Navbar = () => {
           <img 
             src="/logo.png" 
             alt="Lubaan Essence Logo" 
-            className="h-16 mix-blend-multiply"
+            className="h-16"
+            style={{ mixBlendMode: 'multiply' }}
+            loading="eager"
           />
         </a>
 
@@ -101,7 +104,9 @@ const Navbar = () => {
             <img 
               src="/logo.png" 
               alt="Lubaan Essence Logo" 
-              className="h-12 mix-blend-multiply"
+              className="h-12"
+              style={{ mixBlendMode: 'multiply' }}
+              loading="eager"
             />
             <button 
               onClick={toggleMobileMenu} 
