@@ -1,4 +1,5 @@
 
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
@@ -29,10 +30,14 @@ const Navbar = () => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}>
           <img 
-            src="logo.png" 
+            src="/logo.png" 
             alt="Lubaan Essence Logo" 
             className="h-16"
             style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }}
+            onError={(e) => {
+              console.log('Logo failed to load from /logo.png, trying ./logo.png');
+              e.currentTarget.src = './logo.png';
+            }}
           />
         </a>
 
@@ -101,9 +106,13 @@ const Navbar = () => {
         <div className="p-6">
           <div className="flex justify-between items-center mb-8">
             <img 
-              src="logo.png" 
+              src="/logo.png" 
               alt="Lubaan Essence Logo" 
               className="h-12"
+              onError={(e) => {
+                console.log('Mobile logo failed to load from /logo.png, trying ./logo.png');
+                e.currentTarget.src = './logo.png';
+              }}
             />
             <button 
               onClick={toggleMobileMenu} 
@@ -162,3 +171,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
