@@ -1,12 +1,12 @@
-
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import FeaturedSection from "@/components/FeaturedSection";
 import StorySection from "@/components/StorySection";
-import TestimonialSection from "@/components/TestimonialSection";
-import NewsletterSection from "@/components/NewsletterSection";
+// import TestimonialSection from "@/components/TestimonialSection";
+// import NewsletterSection from "@/components/NewsletterSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import QuickSupportChat from "@/components/QuickSupportChat";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Index = () => {
@@ -52,13 +52,13 @@ const Index = () => {
           </div>
         </div>
         <StorySection />
-        <TestimonialSection />
-        <NewsletterSection />
+        {/* <TestimonialSection /> */}
+        <QuickSupportChat />
       </main>
       <div id="footer-section">
         <Footer />
       </div>
-      <WhatsAppButton phoneNumber="+252907919191" />
+      <WhatsAppButton phoneNumber="+252907919191" largeText />
     </div>
   );
 };
