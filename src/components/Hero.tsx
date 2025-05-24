@@ -11,7 +11,7 @@ const Hero = ({ className }: HeroProps) => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" 
+          src="/lubaan_background.jpeg" 
           alt="Frankincense and Essential Oils" 
           className="w-full h-full object-cover"
         />

@@ -7,9 +7,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Brand Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-serif font-medium text-brand-black">Lubaan Assense</h3>
+            <h3 className="text-xl font-serif font-medium text-brand-black">Lubaan Essense</h3>
             <p className="text-brand-gray max-w-xs">
-              Artisanal fragrances crafted with precision and passion, designed to evoke emotion and create lasting impressions.
+            Trusted Worldwide for Authentic Frankincense.
+Experience purity and tradition in every shipment.
+We ship three times a year and offer free samples delivered anywhere in the world.
+Contact us today – your journey with true frankincense starts here.
             </p>
           </div>
 

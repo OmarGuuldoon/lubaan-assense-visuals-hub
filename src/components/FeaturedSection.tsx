@@ -1,6 +1,6 @@
-
 import { Button } from "./ui/button";
 import ProductCard from "./ProductCard";
+import { motion } from "framer-motion";
 
 const FeaturedSection = () => {
   const featuredProducts = [
@@ -8,14 +8,14 @@ const FeaturedSection = () => {
       id: 1,
       name: "Boswellia Carterii",
       description: "Premium Grade",
-      image: "/lovable-uploads/c8a8a7dd-66fc-4de3-81e1-ea01f36c38aa.png",
+      image: "/accra.jpeg",
       slug: "boswellia-carterii"
     },
     {
       id: 2,
       name: "Boswellia Frereana",
       description: "Pure & Natural",
-      image: "/lovable-uploads/3a7aa7a1-7d15-4500-9c82-43188fe391c8.png",
+      image: "/lovable-uploads/c8a8a7dd-66fc-4de3-81e1-ea01f36c38aa.png",
       slug: "boswellia-frereana"
     },
     {
@@ -30,14 +30,26 @@ const FeaturedSection = () => {
   return (
     <section id="featured-section" className="py-24 bg-brand-beige">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+        >
           <h2 className="text-3xl font-serif text-brand-black mb-4">Our Products</h2>
           <p className="text-brand-gray max-w-lg mx-auto">
             We specialize in Boswellia carterii, Boswellia frereana, and Boswellia sacra. Our frankincense is harvested in its purest raw form to ensure unmatched quality and potency in every batch.
           </p>
-        </div>
+        </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+        >
           {featuredProducts.map((product) => (
             <ProductCard
               key={product.id}
@@ -47,9 +59,15 @@ const FeaturedSection = () => {
               slug={product.slug}
             />
           ))}
-        </div>
+        </motion.div>
 
-        <div className="mt-16 text-center">
+        <motion.div
+          className="mt-16 text-center"
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
+        >
           <div className="max-w-2xl mx-auto">
             <h3 className="text-2xl font-serif text-brand-black mb-4">Service</h3>
             <p className="text-brand-gray mb-8">
@@ -67,7 +85,7 @@ const FeaturedSection = () => {
               Contact Us
             </a>
           </Button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
