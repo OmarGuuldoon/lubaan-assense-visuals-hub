@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
@@ -20,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
         {/* Logo */}
         <a href="#top" className="flex items-center" onClick={(e) => {
@@ -28,9 +29,10 @@ const Navbar = () => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}>
           <img 
-            src="/logo.png" 
+            src="logo.png" 
             alt="Lubaan Essence Logo" 
-            className="h-16 mix-blend-multiply"
+            className="h-16"
+            style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }}
           />
         </a>
 
@@ -99,9 +101,9 @@ const Navbar = () => {
         <div className="p-6">
           <div className="flex justify-between items-center mb-8">
             <img 
-              src="/logo.png" 
+              src="logo.png" 
               alt="Lubaan Essence Logo" 
-              className="h-12 mix-blend-multiply"
+              className="h-12"
             />
             <button 
               onClick={toggleMobileMenu} 
