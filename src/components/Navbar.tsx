@@ -38,7 +38,7 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <a 
             href="#top" 
-            className="text-brand-black hover:text-brand-gray transition-colors text-sm uppercase tracking-wider"
+            className="text-white hover:text-brand-cream transition-colors text-sm uppercase tracking-wider drop-shadow"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
@@ -48,7 +48,7 @@ const Navbar = () => {
           </a>
           <a 
             href="#about" 
-            className="text-brand-black hover:text-brand-gray transition-colors text-sm uppercase tracking-wider"
+            className="text-white hover:text-brand-cream transition-colors text-sm uppercase tracking-wider drop-shadow"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("story-section");
@@ -58,7 +58,7 @@ const Navbar = () => {
           </a>
           <a 
             href="#services" 
-            className="text-brand-black hover:text-brand-gray transition-colors text-sm uppercase tracking-wider"
+            className="text-white hover:text-brand-cream transition-colors text-sm uppercase tracking-wider drop-shadow"
             onClick={(e) => {
               e.preventDefault();
             }}
@@ -67,7 +67,7 @@ const Navbar = () => {
           </a>
           <a 
             href="#contact" 
-            className="text-brand-black hover:text-brand-gray transition-colors text-sm uppercase tracking-wider"
+            className="text-white hover:text-brand-cream transition-colors text-sm uppercase tracking-wider drop-shadow"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("footer-section");
@@ -92,7 +92,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div 
         className={cn(
-          "fixed inset-0 z-50 bg-white transform transition-transform duration-300 ease-in-out",
+          "fixed inset-0 z-50 bg-white/70 transform transition-transform duration-300 ease-in-out",
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
@@ -114,7 +114,7 @@ const Navbar = () => {
           <nav className="flex flex-col space-y-6">
             <a 
               href="#top" 
-              className="text-xl text-brand-black hover:text-brand-gray transition-colors"
+              className="text-xl text-white hover:text-brand-cream transition-colors drop-shadow"
               onClick={(e) => {
                 e.preventDefault();
                 window.scrollTo({ top: 0, behavior: "smooth" });
@@ -125,7 +125,7 @@ const Navbar = () => {
             </a>
             <a 
               href="#about" 
-              className="text-xl text-brand-black hover:text-brand-gray transition-colors"
+              className="text-xl text-white hover:text-brand-cream transition-colors drop-shadow"
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection("story-section");
@@ -135,7 +135,7 @@ const Navbar = () => {
             </a>
             <a 
               href="#services" 
-              className="text-xl text-brand-black hover:text-brand-gray transition-colors"
+              className="text-xl text-white hover:text-brand-cream transition-colors drop-shadow"
               onClick={(e) => {
                 e.preventDefault();
               }}
@@ -144,7 +144,7 @@ const Navbar = () => {
             </a>
             <a 
               href="#contact" 
-              className="text-xl text-brand-black hover:text-brand-gray transition-colors"
+              className="text-xl text-white hover:text-brand-cream transition-colors drop-shadow"
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection("footer-section");

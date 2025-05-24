@@ -15,14 +15,14 @@ const FeaturedSection = () => {
       id: 2,
       name: "Boswellia Frereana",
       description: "Pure & Natural",
-      image: "/lovable-uploads/c8a8a7dd-66fc-4de3-81e1-ea01f36c38aa.png",
+      image: "/lovable-uploads/6ee18e55-6705-4c82-a7c7-1689d3448ba8.png",
       slug: "boswellia-frereana"
     },
     {
       id: 3,
       name: "Boswellia Sacra",
       description: "Rich & Aromatic",
-      image: "/lovable-uploads/6ee18e55-6705-4c82-a7c7-1689d3448ba8.png",
+      image: "/lovable-uploads/c8a8a7dd-66fc-4de3-81e1-ea01f36c38aa.png",
       slug: "boswellia-sacra"
     }
   ];
