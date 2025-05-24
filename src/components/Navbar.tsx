@@ -1,3 +1,5 @@
+
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
@@ -20,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
         {/* Logo */}
         <a href="#top" className="flex items-center" onClick={(e) => {
@@ -30,7 +32,12 @@ const Navbar = () => {
           <img 
             src="/logo.png" 
             alt="Lubaan Essence Logo" 
-            className="h-16 mix-blend-multiply"
+            className="h-16"
+            style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }}
+            onError={(e) => {
+              console.log('Logo failed to load from /logo.png, trying ./logo.png');
+              e.currentTarget.src = './logo.png';
+            }}
           />
         </a>
 
@@ -101,7 +108,11 @@ const Navbar = () => {
             <img 
               src="/logo.png" 
               alt="Lubaan Essence Logo" 
-              className="h-12 mix-blend-multiply"
+              className="h-12"
+              onError={(e) => {
+                console.log('Mobile logo failed to load from /logo.png, trying ./logo.png');
+                e.currentTarget.src = './logo.png';
+              }}
             />
             <button 
               onClick={toggleMobileMenu} 
@@ -160,3 +171,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
