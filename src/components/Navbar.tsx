@@ -29,7 +29,7 @@ const Navbar = () => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}>
           <img 
-            src="/accra.jpeg" 
+            src="/logo.png" 
             alt="Lubaan Essence Logo" 
             className="h-16 mix-blend-multiply"
           />
@@ -100,7 +100,7 @@ const Navbar = () => {
         <div className="p-6">
           <div className="flex justify-between items-center mb-8">
             <img 
-              src="/accra.jpeg" 
+              src="/logo.png" 
               alt="Lubaan Essence Logo" 
               className="h-12 mix-blend-multiply"
             />
