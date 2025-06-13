@@ -1,5 +1,5 @@
+import React, { useState } from "react";
 import { Button } from "./ui/button";
-import { useState } from "react";
 import { toast } from "@/components/ui/use-toast";
 
 const QuickSupportChat = () => {
@@ -67,4 +67,4 @@ const QuickSupportChat = () => {
   );
 };
 
-export default QuickSupportChat; 
+export default QuickSupportChat;
