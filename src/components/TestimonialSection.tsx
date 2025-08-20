@@ -16,7 +16,7 @@ const TestimonialSection = () => {
     },
     {
       id: 3,
-      quote: "Lubaan Assense has become my signature scent. People always ask what I'm wearing.",
+      quote: "Hoo Frakincense has become my signature scent. People always ask what I'm wearing.",
       // author: "Emma R.",
       location: "London"
     }

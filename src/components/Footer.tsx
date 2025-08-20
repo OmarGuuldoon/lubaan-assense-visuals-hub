@@ -8,8 +8,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Brand Info */}
-          <div className="space-y-4">
-            <h3 className="text-xl font-serif font-medium text-brand-black">Lubaan Essense</h3>
+          <div className="col-span-1 md:col-span-2">
+            <h3 className="text-xl font-serif font-medium text-brand-black">Hoo Frakincense</h3>
             <p className="text-brand-gray max-w-xs">
             Trusted Worldwide for Authentic Frankincense.
 Experience purity and tradition in every shipment.
@@ -22,8 +22,8 @@ Contact us today – your journey with true frankincense starts here.
           <div className="space-y-4">
             <h4 className="text-base font-medium text-brand-black">Contact</h4>
             <address className="not-italic text-brand-gray space-y-2 text-sm">
-              <p>Email: info@lubaanessence.com</p>
-              <p>Phone: +41763039073</p>
+              <p>Email: hoofrakincense@gmail.com</p>
+              <p>Phone: +252905251111</p>
               <p>Gitschenstrasse 2</p>
               <p>6460 Altdorf</p>
               <p>Switzerland</p>
@@ -32,7 +32,7 @@ Contact us today – your journey with true frankincense starts here.
         </div>
 
         <div className="border-t border-brand-beige mt-12 pt-8 text-xs text-brand-gray text-center max-w-5xl mx-auto">
-          <p>© {new Date().getFullYear()} Lubaan Assense. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Hoo Frakincense. All rights reserved.</p>
         </div>
       </div>
     </footer>

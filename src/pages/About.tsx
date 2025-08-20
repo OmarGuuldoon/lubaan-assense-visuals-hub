@@ -11,9 +11,9 @@ const About = () => {
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0 z-0">
             <img 
-              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
-              alt="About Lubaan Assense" 
-              className="w-full h-full object-cover"
+              src="/accra.jpeg"
+              alt="About Hoo Frakincense"
+              className="w-full h-64 object-cover rounded-lg"
             />
             <div className="absolute inset-0 bg-black/40" />
           </div>
@@ -30,8 +30,8 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl">
               <h2 className="text-3xl font-serif text-brand-brown mb-6">Our Journey</h2>
-              <p className="text-brand-brown/80 mb-4">
-                Lubaan Assense began as a small passion project in a kitchen, with the goal of creating truly natural products that work in harmony with our bodies and the environment.
+              <p className="text-gray-600 leading-relaxed">
+                Hoo Frakincense began as a small passion project in a kitchen, with the goal of creating truly natural products that work in harmony with our bodies and the environment.
               </p>
               <p className="text-brand-brown/80 mb-4">
                 Founded in 2015, we've grown from hand-mixing small batches to crafting a comprehensive line of sustainable wellness products, but our core values remain the same.

@@ -17,14 +17,14 @@ const Hero = ({ className }: HeroProps) => {
           alt="Frankincense and Essential Oils" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
       
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10 animate-fade-in">
         <div className="max-w-xl">
-          <h1 className="text-5xl md:text-7xl font-serif text-white font-light mb-6 leading-tight">
-            Lubaan Essence
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            Hoo Frakincense
           </h1>
           <p className="text-xl text-white/90 mb-4 font-light">
             Natural – Pure – Effective

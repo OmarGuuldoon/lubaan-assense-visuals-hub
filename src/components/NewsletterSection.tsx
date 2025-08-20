@@ -14,7 +14,7 @@ const NewsletterSection = () => {
     
     toast({
       title: "Thank you for subscribing",
-      description: "You'll receive updates from Lubaan Assense soon.",
+      description: "You'll receive updates from Hoo Frakincense soon.",
       duration: 5000,
     });
     

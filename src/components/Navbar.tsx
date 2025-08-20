@@ -30,8 +30,8 @@ const Navbar = () => {
         }}>
           <img 
             src="/logo.png" 
-            alt="Lubaan Essence Logo" 
-            className="h-16 mix-blend-multiply"
+            alt="Hoo Frakincense Logo" 
+            className="h-8 w-auto"
           />
         </a>
 
@@ -101,8 +101,8 @@ const Navbar = () => {
           <div className="flex justify-between items-center mb-8">
             <img 
               src="/logo.png" 
-              alt="Lubaan Essence Logo" 
-              className="h-12 mix-blend-multiply"
+              alt="Hoo Frakincense Logo" 
+              className="h-8 w-auto"
             />
             <button 
               onClick={toggleMobileMenu} 

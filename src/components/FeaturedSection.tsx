@@ -70,8 +70,8 @@ const FeaturedSection = () => {
         >
           <div className="max-w-2xl mx-auto">
             <h3 className="text-2xl font-serif text-brand-black mb-4">Service</h3>
-            <p className="text-brand-gray mb-8">
-              LUBAAN ESSENCE is a leading exporter of premium raw frankincense, delivering the finest resins from the heart of Somalia to essential oil producers, cosmetic companies, perfumers, and beyond.
+            <p className="text-gray-600 leading-relaxed">
+              HOO FRAKINCENSE is a leading exporter of premium raw frankincense, delivering the finest resins from the heart of Somalia to essential oil producers, cosmetic companies, perfumers, and beyond.
             </p>
           </div>
           <Button 

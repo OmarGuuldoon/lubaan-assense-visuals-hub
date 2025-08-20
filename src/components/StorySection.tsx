@@ -8,10 +8,10 @@ const StorySection = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           <div>
-            <img 
-              src="/lovable-uploads/0d327d3b-7f01-4c5c-993a-ac2ea84a9b2a.png" 
-              alt="Lubaan Essence story" 
-              className="w-full h-full object-cover rounded-lg"
+            <img
+              src="/accra.jpeg"
+              alt="Hoo Frakincense story"
+              className="w-full h-64 object-cover rounded-lg"
             />
           </div>
           <div>
